@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=liarachelian/app
+dockerpath=microservice-project
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+export DOCKER_ID_USER=liarachelian
+sudo docker login
+sudo docker tag microservice-project
 
 # Step 3:
-Push image to a docker repository
+sudo docker push $DOCKER_ID_USER/microservice-project
