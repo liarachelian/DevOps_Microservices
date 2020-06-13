@@ -4,12 +4,12 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=microservice-project
+dockerpath=liarachelian/microservice-project
 
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run microservice-project --image=microservice-project --port=80
+kubectl run microservice-project --image=liarachelian/microservice-project --port=80
 
 # Step 3:
 # List kubernetes pods
